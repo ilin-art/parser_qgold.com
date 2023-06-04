@@ -17,6 +17,9 @@ python product_parser.py
 Пример запуска скрипта с интервалом в 600 секунд:
 python product_parser.py --interval 600
 
+## Блок-схема
+![Блок-схема](images/diagram.png)
+
 ## Файлы
 
 - `product_parser.py`: Главный файл скрипта, содержащий основной код для парсинга данных и сохранения их в файлы Excel.
