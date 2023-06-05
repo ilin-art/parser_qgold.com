@@ -1,41 +1,33 @@
-# Jewelry Data Parser
+# Парсер для сайта https://qgold.com/
 
-This script is a data parser for jewelry items from web pages and saves them to Excel files. It utilizes the `requests` module for making HTTP requests and the `openpyxl` module for working with Excel files.
+Этот скрипт представляет собой парсер данных о ювелирных изделиях с веб-страниц и сохраняет их в файлы Excel. Он использует модуль requests для выполнения HTTP-запросов и модуль openpyxl для работы с файлами Excel.
 
-## Installation
+## Установка
 
-To use the script, you need to install the dependencies specified in the `requirements.txt` file. You can install them using `pip` by running the following command:
+Для использования скрипта необходимо установить зависимости, указанные в файле requirements.txt. Вы можете установить их с помощью pip следующим образом:
 pip install -r requirements.txt
 
-## Usage
+## Использование
 
-The script performs data parsing from two different jewelry item URLs, each executed in a separate thread. The item data is then saved to Excel files. The script can be customized to set the interval between parsing using the `--interval` command-line argument.
+Скрипт выполняет парсинг данных различных URL-адресов ювелирных изделий, каждый из которых выполняется в отдельном потоке. Данные об изделиях сохраняются в файлы Excel. Скрипт может быть настроен для задания интервала между парсингом с помощью аргумента командной строки --interval.
 
-Example usage of the script with a 900-second interval (default):
-python your_script.py
+Пример запуска скрипта с интервалом в 900 секунд (по умолчанию):
+python product_parser.py
 
-Example usage of the script with a 600-second interval:
-python your_script.py --interval 600
+Пример запуска скрипта с интервалом в 600 секунд:
+python product_parser.py --interval 600
 
-## Files
+## Файлы
 
-- `your_script.py`: The main script file containing the core code for parsing data and saving it to Excel files.
-- `requirements.txt`: The file containing the list of dependencies to be installed using `pip`.
+- `product_parser.py`: Главный файл скрипта, содержащий основной код для парсинга данных и сохранения их в файлы Excel.
+- `requirements.txt`: Файл, содержащий список зависимостей для установки с помощью `pip`.
 
-## Dependencies
+## Зависимости
 
-The script uses the following dependencies:
+Скрипт использует следующие зависимости:
 
-- `requests`: A module for making HTTP requests.
-- `openpyxl`: A module for working with Excel files.
+- `requests`: Модуль для выполнения HTTP-запросов.
+- `openpyxl`: Модуль для работы с файлами Excel.
 
-You can install the dependencies by running the following command:
+Вы можете установить зависимости с помощью команды:
 pip install -r requirements.txt
-
-## Contributing
-
-If you find any issues or want to contribute improvements, please create an issue or pull request in this repository.
-
-## License
-
-This project is licensed under the terms of the [MIT License](LICENSE).
