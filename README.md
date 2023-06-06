@@ -18,7 +18,7 @@ python product_parser.py
 python product_parser.py --interval 600
 
 ## Блок-схема
-![Блок-схема](images/diagram.png)
+![Блок-схема](image/diagram.png)
 
 ## Файлы
 
